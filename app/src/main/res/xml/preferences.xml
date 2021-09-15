@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="PreferenceScreen">
+
+    <PreferenceCategory
+        android:title="Location Data Collection">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="false"
+            android:key="location_data"
+            android:title="Location permissions" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Social Networking Data Collection">
+
+        <!--<CheckBoxPreference-->
+            <!--android:key="contact_data"-->
+            <!--android:title="Contact permissions"-->
+            <!--android:enabled="false"-->
+            <!--android:defaultValue="true"/>-->
+
+        <CheckBoxPreference
+            android:key="call_data"
+            android:title="Phone permissions"
+            android:enabled="false"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="text_data"
+            android:title="SMS permissions"
+            android:enabled="false"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Storage">
+
+        <CheckBoxPreference
+            android:key="storage_data"
+            android:title="Storage permissions"
+            android:enabled="false"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Activity Data Collection">
+
+        <SwitchPreference
+            android:key="accel_data"
+            android:defaultValue="false"
+            android:summary="Turn physical activity data collection On/Off"
+            android:title="Activity data collection" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Google Fit">
+
+        <SwitchPreference
+            android:key="step_data"
+            android:title="Toggle Step Count collection On/Off"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Account"
+        android:key="accountKey">
+
+        <Preference
+            android:key="logOut"
+            android:summary="Log out of application"
+            android:title="Log out" />
+        <Preference
+            android:key="whiteSpace"
+            android:summary=""
+            android:title=""/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

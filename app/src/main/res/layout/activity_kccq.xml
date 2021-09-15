@@ -1,0 +1,2363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cliffordlab.amoss.gui.surveys.PROMISActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:id="@+id/scrollView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/kccqHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Kansas City Cardiomyopathy Questionnaire"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/kccqInstructions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/kccqInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="87dp"
+                android:text="@string/kccq_instructions"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kccqHeader" />
+
+            <!--ANXIOUS-->
+
+            <LinearLayout
+                android:id="@+id/question1"
+                android:layout_width="0dp"
+                android:layout_height="157dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#E6E6E6"
+                android:backgroundTint="#E6E6E6"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kccqInstructions"
+                tools:layout_editor_absoluteX="-109dp"
+                tools:layout_editor_absoluteY="97dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="553dp"
+                    android:layout_height="106dp"
+                    android:layout_gravity="center_horizontal|fill_horizontal|center"
+                    android:layout_weight="1"
+                    android:text="1. Heart failure affects different people in different ways. Some feel shortness of breath while others feel fatigue. Please indicate how much you are limited by heart failure (shortness of breath or fatigue) in your ability to do the following activities over the past 2 weeks."
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/kccqInstructions" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity1"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:background="#E6E6E6"
+                android:backgroundTint="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question1">
+
+                <TextView
+                    android:id="@+id/textAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ECECEC"
+
+                    android:gravity="center"
+                    android:text="Activity"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="    b.  Walking 1 block on the level ground"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionsRange1a" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="    c.  Hurrying or jogging(as if to catch a bus)"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionRange1b" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="    a.  Showering/bathing"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/questionsRange1a"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity1" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1a"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="@string/anxious"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/questionsRange1a"
+                app:layout_constraintTop_toTopOf="@id/questionsRange1a"
+                app:layout_constraintBottom_toBottomOf="@+id/questionsRange1a">
+
+                <RadioButton
+                    android:id="@+id/anxious_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/anxious_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/anxious_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/anxious_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/anxious_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/anxious_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:tag="6"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <!--ELATED-->
+
+            <LinearLayout
+                android:id="@+id/questionsRange1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintStart_toEndOf="@+id/radioGroup1a"
+                app:layout_constraintTop_toBottomOf="@+id/activity1">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0"
+                    android:paddingTop="8dp"
+                    android:text="Extremely Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0"
+                    android:text="Quite a bit Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0"
+                    android:text="Moderately Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0"
+                    android:text="Slightly Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="0"
+                    android:text="Not at all Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0"
+                    android:text="Limited for other reasons or did not do the activity"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1b"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="@string/elated"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange1b"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange1b">
+
+                <RadioButton
+                    android:id="@+id/elated_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/elated_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/elated_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/elated_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/elated_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/elated_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="6"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <!--SAD-->
+
+            <LinearLayout
+                android:id="@+id/questionRange1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup1b"
+                app:layout_constraintStart_toEndOf="@id/radioGroup1b"
+                app:layout_constraintTop_toBottomOf="@+id/textView18"
+                tools:layout_editor_absoluteX="67dp">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:text="Extremely Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="30dp"
+                    android:text="Quite a bit Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="30dp"
+                    android:text="Moderately Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="30dp"
+                    android:text="Slightly Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="30dp"
+                    android:text="Not at all Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0"
+                    android:paddingBottom="8dp"
+                    android:text="Limited for other reasons or did not do the activity"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1c"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/sad"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/questionRange1c"
+                app:layout_constraintTop_toTopOf="@id/questionRange1c">
+
+                <RadioButton
+                    android:id="@+id/sad_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="6"
+                    android:text="@string/value_6"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/questionRange1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup1c"
+                app:layout_constraintStart_toEndOf="@id/radioGroup1c"
+                app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="Extremely Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Quite a bit Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Moderately Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Slightly LImited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Not at all Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Limited for other reasons or did not do the activity"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup1c">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2.   Over the past two weeks, how many times did you have swelling in your feet, ankles or legs when you woke up in the morning?"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/sad"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange2">
+
+                <RadioButton
+                    android:id="@+id/sad_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/sad_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <!--ANGRY-->
+            <LinearLayout
+                android:id="@+id/questionRange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup2"
+                app:layout_constraintStart_toEndOf="@id/radioGroup2"
+                app:layout_constraintTop_toBottomOf="@+id/question2">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="Every morning"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="3 or more times per week but not every day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="1-2 times per week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Less than once a week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Never over the past 2 weeks"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionRange2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3.   Over the past 2 weeks, on average, how many times has fatigue limited your ability to do what you wanted?"
+
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/angry"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange3">
+
+                <RadioButton
+                    android:id="@+id/angry_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/angry_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/angry_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/angry_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/angry_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/angry_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="6"
+                    android:text="@string/value_6"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/angry_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="7"
+                    android:text="@string/value_7"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <!--IRRITABLE-->
+            <LinearLayout
+                android:id="@+id/questionRange3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup3"
+                app:layout_constraintStart_toEndOf="@id/radioGroup3"
+                app:layout_constraintTop_toBottomOf="@+id/question3">
+
+                <TextView
+                    android:id="@+id/textVie50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="All of the time"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Several times per day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="At least once a day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="3 or more times per week but not every day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="1-2 times per week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Less than once a week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Never over the past 2 weeks"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E6E6E6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionRange3">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="4.   Over the past 2 weeks, on average, how many times has shortness of breath limited your ability to do what you wanted?"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/irritable"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange4">
+
+                <RadioButton
+                    android:id="@+id/irritable_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/irritable_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/irritable_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/irritable_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/irritable_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/irritable_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="6"
+                    android:text="@string/value_6"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/irritable_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="7"
+                    android:text="@string/value_7"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <!--ENERGETIC-->
+            <LinearLayout
+                android:id="@+id/questionRange4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup4"
+                app:layout_constraintStart_toEndOf="@id/radioGroup4"
+                app:layout_constraintTop_toBottomOf="@+id/question4">
+
+                <TextView
+                    android:id="@+id/textVie60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="All of the time"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Several times per day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="At least once a day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="3 or more times per week but not every day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="1-2 times per week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Less than once a week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Never over the past 2 weeks"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="5.   Over the past 2 weeks, on average, how many times have you been forced to sleep sitting up in a chair or with at least 3 pillows to prop you up because shortness of breath?"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/energetic"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange5">
+
+                <RadioButton
+                    android:id="@+id/energetic_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/energetic_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/energetic_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/energetic_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/energetic_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/questionRange5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup5"
+                app:layout_constraintStart_toEndOf="@id/radioGroup5"
+                app:layout_constraintTop_toBottomOf="@+id/question5">
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="Every night"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="3 or more times per week but not every day"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="1-2 times per week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Less than once a week"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Never over the past 2 weeks"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionRange5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="6.   Over the past 2 weeks, how much has your heart failure limited your enjoyment of life?"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/energetic"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange6">
+
+                <RadioButton
+                    android:id="@+id/hf6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf6_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf6_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf6_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/questionRange6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup6"
+                app:layout_constraintStart_toEndOf="@id/radioGroup6"
+                app:layout_constraintTop_toBottomOf="@+id/question6">
+
+                <TextView
+                    android:id="@+id/textView701"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="It has extremely limited my enjoyment of life"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView711"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="It has limited my enjoyment of life quite a bit"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView721"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="It has moderately limited my enjoyment of life"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView731"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="It has slightly limited my enjoyment of life"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView741"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="It has not limited my enjoyment of life at all"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionRange6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="7.   If you had to spend the rest of your life with your heart failure the way it is right now. how would you feel about this?"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/energetic"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange7">
+
+                <RadioButton
+                    android:id="@+id/hf7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf7_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf7_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hf7_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/questionRange7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@+id/radioGroup5"
+                app:layout_constraintStart_toEndOf="@id/radioGroup5"
+                app:layout_constraintTop_toBottomOf="@+id/question7">
+
+                <TextView
+                    android:id="@+id/textView7011"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="Not at all satisfied"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView7111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Mostly dissatisfied"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView7211"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Somewhat satisfied"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView7311"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Mostly satisfied"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView7411"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Completely satisfied"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <!-- starts here -->
+
+            <LinearLayout
+                android:id="@+id/question8"
+                android:layout_width="0dp"
+                android:layout_height="157dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="#E6E6E6"
+                android:backgroundTint="#E6E6E6"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/questionRange7">
+
+                <TextView
+                    android:id="@+id/textView91"
+                    android:layout_width="553dp"
+                    android:layout_height="106dp"
+                    android:layout_gravity="center_horizontal|fill_horizontal|center"
+                    android:layout_weight="1"
+                    android:text="8.  How much does your heart failure affect your lifestyle? Please indicate how your heart failure may have limited your participation in the following activities over the past 2 weeks"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/questionRange7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity2"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:background="#E6E6E6"
+                android:backgroundTint="#E6E6E6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/question8">
+
+                <TextView
+                    android:id="@+id/textAct1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ECECEC"
+
+                    android:gravity="center"
+                    android:text="Activity"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activityB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="    b.  Working or doing household chores"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionRange8a" />
+
+            <TextView
+                android:id="@+id/activityC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="    c.  Visiting family or friends out of your home"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionRange8b" />
+
+            <TextView
+                android:id="@+id/activityA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="    a.  Hobbies, recreational activities"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity2" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup8a"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="@string/anxious"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange8a"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange8a"
+                >
+
+                <RadioButton
+                    android:id="@+id/hfa_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfa_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfa_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfa_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfa_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfa_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="6"
+                    android:text="@string/value_6"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <!--ELATED-->
+
+            <LinearLayout
+                android:id="@+id/questionRange8a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintStart_toEndOf="@+id/radioGroup8a"
+                app:layout_constraintTop_toBottomOf="@+id/activityA">
+
+                <TextView
+                    android:id="@+id/textView121"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="Extremely Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView141"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Quite a bit Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Moderately Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView131"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Slightly Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Not at all Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView311"
+                    android:layout_width="361dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Limited for other reasons or did not do the activity"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup8b"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/elated"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/questionRange8b"
+                app:layout_constraintBottom_toBottomOf="@+id/questionRange8b"
+                >
+
+                <RadioButton
+                    android:id="@+id/hfb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfb_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfb_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="6"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <!--SAD-->
+
+            <LinearLayout
+                android:id="@+id/questionRange8b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintStart_toEndOf="@id/radioGroup8b"
+                app:layout_constraintTop_toBottomOf="@+id/activityB">
+
+                <TextView
+                    android:id="@+id/textView191"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="Extremely Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView201"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Quite a bit Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView261"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Moderately Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView310"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Slightly Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView3112"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Not at all Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView511"
+                    android:layout_width="wrap_content"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Limited for other reasons or did not do the activity"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup8c"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:tag="@string/sad"
+                app:layout_constraintBottom_toBottomOf="@id/questionRange8c"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/questionRange8c"
+                >
+
+                <RadioButton
+                    android:id="@+id/hfc_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="1"
+                    android:text="@string/value_1"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="2"
+                    android:text="@string/value_2"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfc_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="3"
+                    android:text="@string/value_3"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfc_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="4"
+                    android:text="@string/value_4"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfc_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="5"
+                    android:text="@string/value_5"
+                    android:textColor="@android:color/transparent" />
+
+                <RadioButton
+                    android:id="@+id/hfc_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:tag="6"
+                    android:text="@string/value_6"
+                    android:textColor="@android:color/transparent" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/questionRange8c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                app:layout_constraintStart_toEndOf="@id/radioGroup8c"
+                app:layout_constraintTop_toBottomOf="@+id/activityC">
+
+                <TextView
+                    android:id="@+id/textView324"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:text="Extremely Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_3"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textView427"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Quite a bit Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_1"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="301dp" />
+
+                <TextView
+                    android:id="@+id/textView433"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Moderately Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_4"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="398dp" />
+
+                <TextView
+                    android:id="@+id/textView344"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Slightly LImited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_2"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="333dp" />
+
+                <TextView
+                    android:id="@+id/textView345"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="30dp"
+                    android:text="Not at all Limited"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+
+                <TextView
+                    android:id="@+id/textView446"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Limited for other reasons or did not do the activity"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@id/anxious_5"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="429dp" />
+            </LinearLayout>
+
+            <!-- ends here -->
+
+            <Button
+                android:id="@+id/submitKCCQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/mood_zoom_text_submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/questionRange8c" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

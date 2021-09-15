@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">HF Study</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="home">Home</string>
+    <string name="nav_mood_zoom">Mood Zoom</string>
+    <string name="nav_mood_swipe">Mood Swipe</string>
+    <string name="mood_zoom_title">Please rate how the following words describe your mood today: </string>
+    <string name="nav_settings">Settings</string>
+    <string name="stress_cause_today">What was your main cause of stress today?</string>
+    <string name="stress_cause_1">health</string>
+    <string name="stress_cause_2">work / study</string>
+    <string name="stress_cause_3">money</string>
+    <string name="stress_cause_4">relationship</string>
+    <string name="stress_cause_5">family</string>
+    <string name="stress_cause_6">other</string>
+    <string name="value_1">1</string>
+    <string name="value_2">2</string>
+    <string name="value_3">3</string>
+    <string name="value_4">4</string>
+    <string name="value_5">5</string>
+    <string name="value_6">6</string>
+    <string name="value_7">7</string>
+    <string name="mood_cause">Is there anything in particular that has affected your mood or stress (optional)</string>
+    <string name="mood_cause_non_identifiable">Please do not include anything personally identifiable</string>
+    <string name="mood_zoom_text_submit">Submit</string>
+    <string name="anxious">Anxious</string>
+    <string name="elated">Elated</string>
+    <string name="sad">Sad</string>
+    <string name="angry">Angry</string>
+    <string name="irritable">Irritable</string>
+    <string name="energetic">Energetic</string>
+    <string name="confirm">Confirm</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="account_helper">No account yet? Create one</string>
+    <string name="register">Register</string>
+    <string name="pid">Participant ID</string>
+    <string name="permission_rationale">Location data is used as part of the Google Fit API</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="permission_turned_off">Please manually disable your permissions if you do not want data being collected.</string>
+    <string name="permissions_disabled_mme">Data for these permissions will not be collected and are disabled for this study.</string>
+    <string name="ok">OK</string>
+    <string name="swipe_message">Touch the smiley face, then swipe UP or DOWN to match your current mood.</string>
+    <string name="google_api_key_1">AIzaSyCivGLaTiAFIvLetIfu3Wl0fFeWNjO40fc</string>
+    <string name="google_api_key_2">AIzaSyBTQ_9I_X4ZiGk2ginjSNcecM9JjZZKNNg</string>
+    <string name="never">Never</string>
+    <string name="rarely">Rarely</string>
+    <string name="sometimes">Sometimes</string>
+    <string name="often">Often</string>
+    <string name="always">Always</string>
+    <string name="kccq_instructions">The following questions refer to <b>heart</b> <b>failure</b> and how it may affect your life. Please read and complete the following questions. There are no right or wrong answers. Please mark the answer that best applies to you.</string>
+    <string name="hccq_1"><b>Heart failure</b> affects different people in different ways. Some feel shortness of breath while others feel fatigue. Please indicate how much you are limited by <b>heart failure</b> (shortness of breath or fatigue) in your ability to do the following activities <u>over the past 2 weeks</u>.</string>
+    <string name="intro_text">Hi! Let\'s track daily cumulative steps. Use the menu to explore additional actions.</string>
+    <string name="action_dump_subs">List Active Subscriptions</string>
+    <string name="action_cancel_subs">Cancel subscriptions</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_suds">SUDSActivity</string>
+    <string name="title_activity_pcl5">PCL5Activity</string>
+
+    <string name="mom_vitals_message"><b>Why are we collecting this info?\n</b> Blood pressure and heart rate are important signs of wellness. By sharing your vitals you help doctors check your health.</string>
+
+    <string name="mom_vitals_warning_1"><b>Warning:\n</b>Your blood pressure may be high. Please schedule an appointment with your doctor.</string>
+    <string name="mom_vitals_warning_2"><b>Warning:\n</b>Your blood pressure may be low. Please schedule an appointment with your doctor.</string>
+    <string name="mom_vitals_warning_3"><b>Warning:\n</b>Your blood pressure may be high. Please sit quietly for 15 minutes and check your blood pressure again.</string>
+    <string name="mom_vitals_warning_4"><b>Warning:\n</b>Your blood pressure may be high. Please contact a Grady nurse.</string>
+
+    <string name="mom_symptoms_warning_1"><b>Warning:\n</b>These symptoms may be serious. You should contact your doctor as soon as possible due to: </string>
+
+    <string name="grady_nurse_hotline">4046160600</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preferenceScreen" translatable="false">preferenceScreen</string>
+    <string name="account_pref_category">Account</string>
+    <string name="mom_vitals_picture_instructions">1. Press SNAP PHOTO and take a clear picture of the study provided blood pressure monitor screen.\n\n2. Drag the scroll wheel to input values.\n\n3. Click either the LEFT or RIGHT ARM button to submit. Repeat steps for other arm.</string>
+    <string name="vitals_picture_instructions">1. Press SNAP PHOTO and take a clear picture of the study provided blood pressure monitor screen.\n\n2. Drag the scroll wheel to input values.\n\n3. Click SUBTMIT button to submit. Repeat steps for other arm.</string>
+    <string name="title_activity_steps">StepsActivity</string>
+    <string name="title_activity_step_count_graph">StepCountGraphActivity</string>
+    <string name="need_help">&lt;a href=https://amoss.emory.edu/moyo-beta>Forgot password/Need help&lt;/a></string>
+    <string name="deny">Deny</string>
+    <string name="allow">Allow</string>
+</resources>

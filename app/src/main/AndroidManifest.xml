@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cliffordlab.amoss">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<!--    <uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+<!--    <uses-permission android:name="android.permission.READ_SMS" />-->
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--    <uses-permission android:name="android.permission.READ_CALL_LOG" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />-->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+<!--    <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name=".app.AmossApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_config"
+        android:icon="@drawable/moyo_logo"
+        android:label="${appName}"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key_1" />
+        <meta-data
+            android:name="com.google.android.awareness.API_KEY"
+            android:value="@string/google_api_key_1" />
+        <meta-data
+            android:name="com.google.android.nearby.messages.API_KEY"
+            android:value="@string/google_api_key_1" />
+
+        <activity
+            android:name=".gui.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".gui.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".gui.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".gui.ball.BallGameActivity" />
+        <activity android:name=".gui.activity.StepCountGraphActivity" />
+        <activity android:name=".gui.activity.StepsLogActivity" />
+        <activity android:name=".gui.activity.AccelGraphActivity" />
+        <activity android:name=".gui.vitals.VitalsActivity"/>
+        <activity android:name=".gui.environment.EnvironmentActivity" />
+        <activity android:name=".gui.social.SocialGraphActivity" />
+        <activity android:name=".gui.food.FoodDiaryActivity"/>
+        <activity android:name=".gui.surveys.SurveyListActivity" />
+        <activity android:name=".gui.surveys.MoodZoomActivity" />
+        <activity android:name=".gui.surveys.MoodSwipeActivity" />
+        <activity android:name=".gui.surveys.PHQNineActivity" />
+        <activity android:name=".gui.surveys.WeightActivity" />
+        <activity android:name=".gui.surveys.PROMISActivity" />
+        <activity android:name=".gui.surveys.QLESQActivity" />
+        <activity android:name=".gui.surveys.PainActivity" />
+        <activity android:name=".gui.surveys.graphs.SurveyGraph" />
+        <activity
+            android:name=".gui.surveys.KCCQActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity android:name=".gui.surveys.MUQActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".gui.surveys.GAD7Activity" />
+        <activity android:name=".gui.surveys.GSQActivity" />
+        <activity android:name=".gui.mom.MoyoMomActivity" />
+        <activity android:name=".gui.mom.MomVitalsActivity" />
+        <activity android:name=".gui.mom.MomSymptomsActivity" />
+        <activity android:name=".gui.misc.MoyoBrowser" />
+        <activity android:name=".gui.vitals.VitalsHistoryActivity" />
+        <activity android:name=".gui.SettingsActivity" />
+        <activity android:name=".gui.misc.EmailActivity" />
+        <activity android:name=".gui.epicfhir.MyChartActivity" />
+        <activity android:name=".gui.surveys.SUDSActivity" />
+        <activity android:name=".gui.surveys.PCL5Activity" />
+
+        <receiver
+            android:name=".receivers.TimezoneReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.PowerConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.LowStorageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receivers.SmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.LoginReceiver" />
+
+        <receiver android:name=".receivers.StartupReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService" android:enabled="true" />
+
+        <service android:name=".datacollector.AmossForegroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+        <service
+            android:name=".datacollector.accel.AccelService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".datacollector.location.LocationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".models.GAService" />
+        <service android:name=".services.NotificationDismissalService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

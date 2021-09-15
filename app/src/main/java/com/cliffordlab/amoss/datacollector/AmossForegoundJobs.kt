@@ -1,0 +1,3 @@
+package com.cliffordlab.amoss.datacollector
+
+class AmossForegoundJobs

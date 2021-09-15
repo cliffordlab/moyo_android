@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:paddingHorizontal="24dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/questionnaireLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableLayout
+            android:id="@+id/firstQuestionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Over the past two weeks how many times did you forget to take your medication?"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="false">
+
+                <RadioGroup
+                    android:id="@+id/level_group1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question_view1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="@string/anxious"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question_view1">
+
+                    <RadioButton
+                        android:id="@+id/levelGroup1_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onRadioButtonClicked"
+                        android:tag="0"
+                        android:text="0 \n"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/levelGroup1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onRadioButtonClicked"
+                        android:tag="1"
+                        android:text="Less than half the\n time"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/levelGroup1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onRadioButtonClicked"
+                        android:tag="2"
+                        android:text="More than \n half the days"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/levelGroup1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onRadioButtonClicked"
+                        android:tag="3"
+                        android:text="All the \n time"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:id="@+id/addMedicationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titleView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Please check all that apply"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/rxEditField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:completionThreshold="3"
+                android:hint="Enter medication name..."
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="false">
+
+                <RadioGroup
+                    android:id="@+id/level_group2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/question_view1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question_view1">
+
+                    <RadioButton
+                        android:id="@+id/levelGroup2_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onMedicationRadioButtonClicked"
+                        android:tag="0"
+                        android:text="Forgot \n today "
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/levelGroup2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onMedicationRadioButtonClicked"
+                        android:tag="1"
+                        android:text="Forgot to take less \nthan half the time"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/levelGroup2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onMedicationRadioButtonClicked"
+                        android:tag="2"
+                        android:text="Forgot more than \n half the days"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/levelGroup2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center"
+                        android:onClick="onMedicationRadioButtonClicked"
+                        android:tag="3"
+                        android:text="Always \n forget"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+            </TableRow>
+
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:enabled="false"
+        android:onClick="addMedication"
+        android:text="Add Medication"
+        android:visibility="invisible"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/questionnaireLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="50dp"
+        android:enabled="false"
+        android:onClick="onSubmitBtnPressed"
+        android:text="Finish"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@id/addBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

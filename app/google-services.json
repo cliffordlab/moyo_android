@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "936617125964",
+    "project_id": "moyo-app-c2771",
+    "storage_bucket": "moyo-app-c2771.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936617125964:android:fb35cb5f7b5bf8797a2ce9",
+        "android_client_info": {
+          "package_name": "com.cliffordlab.moyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936617125964-nf5la6rfjhfdimlqbr37nruhdt9l1kf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhHA3EPRcFIivDzA_IkYtFAxPGFGkbnoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936617125964-nf5la6rfjhfdimlqbr37nruhdt9l1kf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936617125964:android:90634d4a1fa81d227a2ce9",
+        "android_client_info": {
+          "package_name": "com.cliffordlab.moyo.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936617125964-nf5la6rfjhfdimlqbr37nruhdt9l1kf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhHA3EPRcFIivDzA_IkYtFAxPGFGkbnoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936617125964-nf5la6rfjhfdimlqbr37nruhdt9l1kf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
